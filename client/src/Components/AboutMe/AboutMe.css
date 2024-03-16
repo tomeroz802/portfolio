@@ -1,0 +1,130 @@
+@media screen and (min-width: 900px) {
+    .about-me{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-info{
+        width: 65%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        gap: 50px;
+    }
+
+    .footer-container{
+        width: 35%;
+    }
+
+    .footer-info-center{
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+    }
+
+    .footer-info-right{
+        justify-content: center;
+        gap: 10%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .about-me{
+        height: 75%;
+    }
+
+    .footer-info{
+        width: 100%;
+        top: 7%;
+        left: 7%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, 60%);
+    }
+
+    .footer-container{
+        width: 60%;
+    }
+
+    .footer-info-center{
+        display: flex;
+        flex-direction: column;
+        gap: 20%;
+    }
+
+    .footer-info-right{
+        gap: 10%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .about-me{
+        height: 100%;
+        margin-top: 250px;
+    }
+
+    .footer-info{
+        width: 100%;
+        top: 7%;
+        left: 7%;
+        display: flex;
+        flex-direction: column;
+        gap: 12%;
+    }
+
+    .footer-info-center{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-info-right{
+        gap: 5%;
+    }
+}
+
+.about-me{
+    position: relative;
+    top: 50px;
+    background-color: rgba(127, 73, 213, 0.822);
+    width: 100%;
+}
+
+.footer-info{
+    height: 80%;
+    position: relative;
+    color: white;
+}
+
+.footer-info-title{
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+
+.footer-info-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info-center a{
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-info-right{
+    display: flex;
+}
+
+.footer-icons{
+    color: white;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    color: white;
+}

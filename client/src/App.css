@@ -1,0 +1,35 @@
+h1{
+  font-size: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 900px) {
+  .site-sections{
+    height: 90%;
+    scroll-margin-top: 80px;
+  }  
+}
+
+@media screen and (max-width: 900px) {
+  .site-sections{
+    height: 95%;
+    scroll-margin-top: 30px;
+  }
+}
+
+.site-icons{
+  color: rgba(127, 73, 213, 0.822);
+}
+
+.btn{
+  display: flex;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(127, 73, 213, 0.822);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn p{
+  margin-left: 10%;
+}

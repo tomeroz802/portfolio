@@ -1,0 +1,124 @@
+@media screen and (min-width: 900px){
+    .navbar{
+        height: 8%;
+        top: -1px;
+        border-bottom: 1px solid rgba(127, 73, 213, 0.822);
+        align-items: center;
+    }
+
+    .navbar-links{
+        position: absolute;
+        top: 45%;
+        right: 220px;
+        gap: 8%;
+    }
+    
+    .top-navbar-links{
+        white-space: nowrap;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+    }  
+
+    .navbar-menu-list a{
+        display: none;
+    }
+
+    .navbar-name{
+        margin-left: 10%;
+    }
+
+    .dark-mode-icon{
+        position: relative;
+        top: 2px;
+    }
+
+    .navbar-menu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .navbar{
+        top: 93%;
+    }
+
+    .navbar-name{
+        margin-left: 10%;
+    }
+
+    .dark-mode-icon{
+        position: absolute;
+        bottom: 3px;
+        right: 60px;
+    }
+
+    .navbar-menu{
+        position: absolute;
+        transform: translateY(-3px);
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .top-navbar-links{
+        display: none;
+    }
+
+    .navbar-menu-list{
+        background-color: white;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        bottom: -100px;
+        left: 0;  
+        display: grid;
+        grid-template-columns: repeat(3, 33.2%);
+        grid-template-rows: repeat(2, 50%);
+        transition: bottom 1s ease;
+    }
+
+    .navbar-menu-list a{
+        width: 100%;
+        border: 1px solid rgb(67, 67, 67);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .navbar-menu-list a{
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu-navbar-icon{
+        font-size: 20px;
+        color: black;
+        margin-top: 4px;
+    }
+}
+
+.navbar{
+    position: sticky;
+    background-color: white;
+    width: 100%;
+    height: 6%;
+    padding-top: 2%;
+    display: flex;
+    z-index: 2;
+  }
+  
+.navbar-links{
+    display: flex;
+}
+  
+.dark-mode-icon{
+    cursor: pointer;
+}
+
+.navbar-menu{
+    font-size: 25px;
+    margin-top: 1.5px;
+}

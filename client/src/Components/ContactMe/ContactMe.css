@@ -1,0 +1,238 @@
+@font-face{
+    font-family: "Poppins";
+    src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+}
+
+@media screen and (min-width: 900px) {
+    .contact-me{
+        width: 80%;
+        margin-left: 15%;
+        gap: 5%;
+    }
+
+    .way-to-contact{
+        grid-template-columns: repeat(2, 15%);
+    }
+    
+    .contact-me form{
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: repeat(3, 45%);
+    }
+
+    .contact-me form > *:not(:last-child){
+        padding-left: 15px;
+    }
+
+    .api-msg-red{
+      grid-column-end: 4;
+    }
+
+    .close-api-msg{
+      font-size: 20px;
+      position: relative;
+      bottom: 10px;
+      left: 3px;
+    }
+
+    .send-btn{
+        left: 63%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    .contact-me{
+        width: 100%;
+        margin-left: 7%;
+    }
+    
+    .way-to-contact span{
+        word-break: break-all;
+    }
+    
+    .contact-me form{
+        grid-template-columns: repeat(2, 35%);
+        grid-template-rows: repeat(3, 45%);
+        margin-left: 10%;
+    }
+
+    .contact-me form > *:not(:last-child) {
+        padding-left: 15px;
+    }
+
+    .api-msg-red{
+      grid-column-end: 3;
+    }
+
+    .close-api-msg{
+      font-size: 30px;
+      position: relative;
+      bottom: 20px;
+    }
+
+    .send-btn{
+        width: 150px;
+        position: relative;
+        left: 50%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    .contact-me form{
+        display: grid;
+        row-gap: 10%;
+        column-gap: 10%;
+    }
+
+    .way-to-contact{
+        grid-template-columns: repeat(2, 18%);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contact-me{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+    }
+    
+    .way-to-contact{
+        grid-template-columns: repeat(2, 25%);
+        margin-bottom: 20px;
+    }
+    
+    .way-to-contact span{
+        width: fit-content;
+        word-break: break-all;
+    }
+
+    .contact-me form{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .contact-me form > *:not(:last-child){
+        padding-left: 10px;
+        width: 90%;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .close-api-msg{
+      font-size: 20px;
+      position: relative;
+      bottom: 10%;
+    }
+
+    .send-btn{
+        width: 140px;
+        left: 27%;
+    }
+    
+}
+
+.contact-me{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+  }
+  
+  .ways-to-contact{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+  }
+  
+  .way-to-contact{
+    display: grid;
+    grid-template-rows: auto auto;
+  }
+  
+  .way-to-contact-icon{
+    font-size: 30px;
+    position: relative;
+    top: 35%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  } 
+  
+  .way-to-contact span{
+    width: 200px;
+  }
+  
+  .way-to-contact-title{
+    font-size: larger;
+    font-weight: bold;
+  }
+  
+  .way-to-contact-info{
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+  
+  .contact-me form{
+    height: 60%;
+  }
+  
+  .contact-me form > input:focus:valid{
+    border: 3px solid lightgreen;
+  }
+
+  .contact-me form > *:focus:invalid{
+    border: 1px solid red;
+  }
+
+  .contact-me form > *:not(:last-child){
+    font-family: "Poppins";
+    background-color: rgb(231, 223, 251);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+
+  .api-msg{
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+  }
+
+  .api-msg-green{
+    color: rgb(42, 198, 42);
+    grid-column-end: 3;
+  }
+
+  .api-msg-red{
+    color: tomato;
+
+  }
+
+  .close-api-msg{
+    cursor: pointer;
+  }
+  
+  .wide-form-elements{
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  
+  .contact-me textarea{
+    resize: none;
+    padding-top: 2%;
+  }
+
+  .send-btn{
+    font-family: "Poppins";
+    font-size: large;
+    position: relative;
+    top: 15%;
+  }
+  
+  .send-btn-icon{
+    font-size: 25px;
+    margin-top: 75%;
+    margin-left: 30%;
+  }
